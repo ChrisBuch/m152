@@ -1,4 +1,15 @@
-#container{
+
+
+#cardContainer{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'card1 card2 card3';
+}
+
+.container{    
+    margin: 10px;
     max-width:400px;
     max-height: 100px;
     display: grid;
@@ -7,6 +18,18 @@
     grid-template-areas:
     'title title'
     'contenttext iconButton';
+}
+
+#container2{
+    grid-area: card2;
+}
+#container3{
+    grid-area: card3;
+}
+
+
+#container{
+    grid-area: card1;
   }
 
 #title
